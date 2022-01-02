@@ -1,0 +1,6 @@
+AddDefaultCharset UTF-8
+RewriteEngine on 
+RewriteCond %{HTTP_REFERER} !^http://(www\.)?domain\.ltd [NC] 
+RewriteCond %{HTTP_REFERER} !^http://(www\.)?domain\.ltd.*$ [NC] 
+RewriteRule \.(json)$ /messageforcurious [L]
+
